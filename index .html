@@ -15,13 +15,19 @@
       margin: 0;
     }
 
-    form {
+    .form-container {
       background: #ffffff;
       padding: 30px 40px;
       border-radius: 10px;
       box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
       width: 100%;
       max-width: 500px;
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 30px;
+      color: #333;
     }
 
     form p {
@@ -76,40 +82,43 @@
   </style>
 </head>
 <body>
-  <form>
-    <p>
-      <label for="firstName">First Name</label>
-      <input type="text" id="firstName" placeholder="Enter your first name" />
-    </p>
-    <p>
-      <label for="lastName">Last Name</label>
-      <input type="text" id="lastName" placeholder="Enter your last name" />
-    </p>
-    <p>
-      <label for="password">Password</label>
-      <input type="password" id="password" maxlength="10" placeholder="Enter your password" />
-    </p>
-    <p>
-      <label for="bio">Bio</label>
-      <textarea id="bio" rows="5" placeholder="Enter your bio data here"></textarea>
-    </p>
-    <p>
-      <label>Gender</label>
-      <div class="radio-group">
-        <label><input type="radio" name="Gender" value="male" /> Male</label>
-        <label><input type="radio" name="Gender" value="female" /> Female</label>
-        <label><input type="radio" name="Gender" value="other" /> Other</label>
-      </div>
-    </p>
-    <p>
-      <label>Favorite Flower</label>
-      <div class="radio-group">
-        <label><input type="radio" name="favflower" value="Rose" /> 🌹 Rose</label>
-        <label><input type="radio" name="favflower" value="Sunflower" /> 🌻 Sunflower</label>
-        <label><input type="radio" name="favflower" value="Tulip" /> 🌷 Tulip</label>
-      </div>
-    </p>
-    <button type="submit">Submit</button>
-  </form>
+  <div class="form-container">
+    <h2>Student Form</h2>
+    <form>
+      <p>
+        <label for="firstName">First Name</label>
+        <input type="text" id="firstName" placeholder="Enter your first name" />
+      </p>
+      <p>
+        <label for="lastName">Last Name</label>
+        <input type="text" id="lastName" placeholder="Enter your last name" />
+      </p>
+      <p>
+        <label for="password">Password</label>
+        <input type="password" id="password" maxlength="10" placeholder="Enter your password" />
+      </p>
+      <p>
+        <label for="bio">Bio</label>
+        <textarea id="bio" rows="5" placeholder="Enter your bio data here"></textarea>
+      </p>
+      <p>
+        <label>Gender</label>
+        <div class="radio-group">
+          <label><input type="radio" name="Gender" value="male" /> Male</label>
+          <label><input type="radio" name="Gender" value="female" /> Female</label>
+          <label><input type="radio" name="Gender" value="other" /> Other</label>
+        </div>
+      </p>
+      <p>
+        <label>Favorite Flower</label>
+        <div class="radio-group">
+          <label><input type="radio" name="favflower" value="Rose" /> 🌹 Rose</label>
+          <label><input type="radio" name="favflower" value="Sunflower" /> 🌻 Sunflower</label>
+          <label><input type="radio" name="favflower" value="Tulip" /> 🌷 Tulip</label>
+        </div>
+      </p>
+      <button type="submit">Submit</button>
+    </form>
+  </div>
 </body>
 </html>
