@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Styled Form</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #f0f2f5;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    form {
+      background: #ffffff;
+      padding: 30px 40px;
+      border-radius: 10px;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+      width: 100%;
+      max-width: 500px;
+    }
+
+    form p {
+      margin-bottom: 20px;
+    }
+
+    label {
+      font-weight: bold;
+      display: block;
+      margin-bottom: 6px;
+    }
+
+    input[type="text"],
+    input[type="password"],
+    textarea {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 14px;
+    }
+
+    textarea {
+      resize: vertical;
+    }
+
+    .radio-group {
+      display: flex;
+      gap: 15px;
+      margin-top: 8px;
+    }
+
+    .radio-group label {
+      font-weight: normal;
+    }
+
+    button {
+      background-color: #4CAF50;
+      color: white;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 16px;
+      width: 100%;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+  <form>
+    <p>
+      <label for="firstName">First Name</label>
+      <input type="text" id="firstName" placeholder="Enter your first name" />
+    </p>
+    <p>
+      <label for="lastName">Last Name</label>
+      <input type="text" id="lastName" placeholder="Enter your last name" />
+    </p>
+    <p>
+      <label for="password">Password</label>
+      <input type="password" id="password" maxlength="10" placeholder="Enter your password" />
+    </p>
+    <p>
+      <label for="bio">Bio</label>
+      <textarea id="bio" rows="5" placeholder="Enter your bio data here"></textarea>
+    </p>
+    <p>
+      <label>Gender</label>
+      <div class="radio-group">
+        <label><input type="radio" name="Gender" value="male" /> Male</label>
+        <label><input type="radio" name="Gender" value="female" /> Female</label>
+        <label><input type="radio" name="Gender" value="other" /> Other</label>
+      </div>
+    </p>
+    <p>
+      <label>Favorite Flower</label>
+      <div class="radio-group">
+        <label><input type="radio" name="favflower" value="Rose" /> 🌹 Rose</label>
+        <label><input type="radio" name="favflower" value="Sunflower" /> 🌻 Sunflower</label>
+        <label><input type="radio" name="favflower" value="Tulip" /> 🌷 Tulip</label>
+      </div>
+    </p>
+    <button type="submit">Submit</button>
+  </form>
+</body>
+</html>
